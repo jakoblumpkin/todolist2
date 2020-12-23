@@ -11,7 +11,7 @@ class TaskForm(ModelForm):
         model=mylist
         fields=['name','time']
         labels={"name": _('What are you doing today? '),
-                "time": _('What time would you do this? ')}
+                "time": _('What time are you doing this? ')}
 
 
 class RegisterForm(UserCreationForm):
