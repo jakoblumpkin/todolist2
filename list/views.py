@@ -48,3 +48,6 @@ def register(request):
         form=RegisterForm()
     context={"register":form}
     return render(request, 'registration/register.html', context)
+
+def created_account(request):
+    return render(request, 'registration/createdaccount.html')

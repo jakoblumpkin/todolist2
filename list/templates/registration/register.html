@@ -11,7 +11,7 @@
 {% block content %}
 <h1>Register Below!</h1>
 <div style="position:relative; left:10%; width:65%; height:20%; ">
-    <form method="POST" >{% csrf_token %}
+    <form method="POST" action="/created_account/">{% csrf_token %}
         {{register|crispy}}
         <button  class="btn btn-primary">Create an account.</button>
     </form>
